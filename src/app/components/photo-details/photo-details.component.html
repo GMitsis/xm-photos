@@ -1,0 +1,11 @@
+<div class="photo-details">
+    <div class="photo-details__container">
+        <img [src]="photo()?.objectUrl" loading="lazy" alt="Photo {{ photo()?.id }}" class="photo-image" />
+    </div>
+    <div>
+        <button mat-raised-button color="warn" class="remove-button" (click)="remove(photo()?.id)">
+            <mat-icon>delete</mat-icon>
+            Remove from Favorites
+        </button>
+    </div>
+</div>

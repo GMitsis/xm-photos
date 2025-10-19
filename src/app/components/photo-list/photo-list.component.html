@@ -1,0 +1,20 @@
+<div #scrollContainer class="photo-list-container">
+    @if(photos().length > 0) {
+    <app-photo-grid [photos]="photos()" (photoClick)="onPhotoClick($event)"></app-photo-grid>
+
+    @if(hasMore() && !loading()) {
+    <div class="scroll-trigger"></div>
+    }
+    }
+
+    @if(loading()) {
+    <div class="loading">
+        <div>
+            <mat-spinner diameter="50" color="accent"></mat-spinner>
+        </div>
+        <div>
+            Loading photos...
+        </div>
+    </div>
+    }
+</div>

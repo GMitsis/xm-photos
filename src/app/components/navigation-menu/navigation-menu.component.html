@@ -1,0 +1,20 @@
+<mat-toolbar color="primary" class="header-toolbar">
+    <div class="header-container">
+        <div class="title-section">
+            <div>
+                <img src="/images/xm-logo.png" alt="XM">
+            </div>
+            <div class="app-title">
+                Photos
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <nav class="navigation-buttons">
+                <button mat-button routerLink="/" routerLinkActive="active-route"
+                    [routerLinkActiveOptions]="{exact: true}">Photos</button>
+                <button mat-button routerLink="/favorites" routerLinkActive="active-route">Favorites</button>
+            </nav>
+        </div>
+    </div>
+</mat-toolbar>

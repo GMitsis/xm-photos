@@ -1,0 +1,22 @@
+<div class="photo-list">
+    <div class="photo-list__grid">
+        @if(header()) {
+        <div class="photo-list__grid-header">
+            {{ header() }}
+        </div>
+        }
+        <mat-grid-list cols="5" gutterSize="48px" class="photo-grid">
+            @for(photo of photos(); track photo.id) {
+            <mat-grid-tile class="photo-tile" (click)="onPhotoClick(photo)">
+                <div class="photo-container">
+                    <img [src]="photo.download_url" loading="lazy" alt="Photo by {{ photo.author }}"
+                        class="photo-image" />
+                    <div class="photo-overlay">
+                        <span class="photo-author">{{ photo.author }}</span>
+                    </div>
+                </div>
+            </mat-grid-tile>
+            }
+        </mat-grid-list>
+    </div>
+</div>

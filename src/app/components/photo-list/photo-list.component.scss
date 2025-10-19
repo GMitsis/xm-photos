@@ -1,0 +1,20 @@
+.photo-list-container {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 48px;
+
+    ::ng-deep mat-spinner circle {
+        stroke: #1e8d9b;
+    }
+}
+.scroll-trigger {
+    height: 1px;
+    width: 100%;
+}
