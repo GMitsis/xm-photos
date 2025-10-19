@@ -7,7 +7,7 @@ A modern, responsive photo gallery application built with Angular 19 and Angular
 ### 📸 Photo Gallery
 
 -   **Infinite Scroll**: Seamlessly browse through thousands of photos with automatic loading
--   **Random Delays**: 2-3 second loading delays to simulate real-world API behavior
+-   **Random Delays**: 200-300 ms loading delays to simulate real-world API behavior
 -   **Responsive Grid**: Adaptive photo grid that works on all screen sizes
 -   **High-Quality Images**: Photos sourced from Picsum Photos API
 -   **Click to Favorite**: Add photos to favorites with a single click
@@ -15,9 +15,9 @@ A modern, responsive photo gallery application built with Angular 19 and Angular
 ### ⭐ Favorites Management
 
 -   **Persistent Storage**: Favorites saved to localStorage
--   **Smart Notifications**: Success messages with undo functionality
+-   **Smart Notifications**: Success messages
 -   **Duplicate Prevention**: Intelligent filtering to avoid duplicate photos
--   **Quick Removal**: Easy removal from favorites with confirmation
+-   **Quick Removal**: Easy removal from favorites
 
 ### 🎨 User Interface
 
@@ -32,7 +32,6 @@ A modern, responsive photo gallery application built with Angular 19 and Angular
 -   **Mobile First**: Optimized for mobile devices
 -   **Tablet Support**: Perfect layout for tablets
 -   **Desktop Experience**: Enhanced experience on larger screens
--   **Touch Friendly**: All interactions optimized for touch devices
 
 ## 🛠 Technical Stack
 
